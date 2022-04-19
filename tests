@@ -174,7 +174,6 @@ local function GetLair()
     if not Library.flags.LairFarm then return end
 
     for _, NPC in ipairs(NPCFolder:GetChildren()) do --eeeeeeeeee
-        NPC = NPC.Person
         if not NPC:FindFirstChild("Head") then continue end
 
         local SubUI = NPC.Head:FindFirstChild("Sub")
